@@ -23,11 +23,13 @@ const [mostrarModal, setMostrarModal] = useState(true)
       const resposta = await fetch('https://my.api.mockaroo.com/lestetelecom/test.json?key=f55c4060')
       const respostaTradata = await resposta.json()
       const dadosSalvos = localStorage.getItem('contatos')
-      const novoArray = JSON.parse(dadosSalvos)
+        const novoArray = JSON.parse(dadosSalvos)
       if (Array.isArray(novoArray)) {
+        
         setTabela([...respostaTradata, ...novoArray])
       } else {
         console.log('Os dados nao carregaram')
+        setTabela([respostaTradata])
       }
 
     } catch (err) {
