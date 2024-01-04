@@ -41,19 +41,18 @@ export default function Tabela({contatos,setContato,setAoEditar, exibeFormulario
 
   }
 
+  const dadosEditar = (contatos) => {
+    setAoEditar(contatos)
+    console.log(contatos)
+    exibeFormulario()
+  }
   
-
-    const dadosEditar = (contatos)=>{
-        setAoEditar(contatos)
-        console.log(contatos)
-        exibeFormulario() 
-    }
-    function formataData(data){
-      if (typeof data === 'string') {
-        const [ano, mes, dia] = data.split('-');
-        return `${dia}/${mes}/${ano}`;
+  function formataData(data) {
+    if (typeof data === 'string') {
+      const [ano, mes, dia] = data.split('-');
+      return `${dia}/${mes}/${ano}`;
     } else {
-        console.error('O parâmetro fornecido não é uma string.');
+      console.error('O parâmetro fornecido não é uma string.');
     }
   }
       
