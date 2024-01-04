@@ -1,0 +1,39 @@
+.cabecalho {
+    gap: 12px;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 12px;
+}
+
+.cabecalho h1{
+    font-size: 32px;
+    text-align: center;
+    padding: 6px;
+}
+.cabecalho select{
+    padding: 1rem;
+    width: 125px;
+    font-size: 14px;
+
+}
+.cabecalho select option{
+    padding: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .cabecalho {
+        flex-wrap: wrap; 
+        width: auto;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cabecalho h1{
+        font-size: 22px;
+    }
+}
+

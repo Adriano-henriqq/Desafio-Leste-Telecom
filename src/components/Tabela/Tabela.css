@@ -1,0 +1,109 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lista-contatos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 1px solid black;
+  list-style: none;
+  margin-top: 20px;
+  gap: 32px;
+}
+
+
+
+.lista-contatos li {
+  background-color: #dbebf2;
+  display: flex;
+  align-items: self-start;
+  padding: 0.5rem;
+  width: 100%;
+  display: flex;
+  border-radius: 6px;
+  margin: 1rem;
+  
+  
+}
+
+.lista-contatos li img {
+  border-radius: 50%;
+  width: 70px;
+  max-width: 100%;
+  height: auto;
+  margin-right: 10px;
+}
+
+
+
+.lista-contatos h3 {
+  margin: 0 0 5px;
+  font-weight: 700;
+}
+
+.lista-contatos p {
+  margin: .5rem ;
+  font: size 16px; ;
+}
+
+.lista-contatos .botoes {
+  display: flex;
+  gap: 10px;
+}
+
+.info-contato{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.container__button{
+  display: flex;
+  width: 50%;
+  position: relative;
+  justify-content: end;
+
+}
+
+.container__button button{
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(84, 105, 212);
+  box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 12%) 0px 1px 1px 0px, rgb(84 105 212) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 8%) 0px 2px 5px 0px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 19px 20px;
+  min-height: 28px;
+  transition: background-color .24s,box-shadow .24s;
+  margin: .5rem;
+  justify-self: flex-end;
+}
+.container__button button:hover {
+  background-color: azure;
+  color: blue;
+  box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 12%) 0px 1px 1px 0px, rgb(84 105 212) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 8%) 0px 3px 9px 0px, rgb(60 66 87 / 8%) 0px 2px 5px 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .lista-contatos{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: inherit;
+
+  }
+  .lista-contatos li{
+    margin: 0;
+  }
+
+  
+}
