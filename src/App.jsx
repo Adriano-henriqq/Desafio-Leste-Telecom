@@ -29,7 +29,7 @@ const [mostrarModal, setMostrarModal] = useState(true)
         setTabela([...respostaTradata, ...novoArray])
       } else {
         console.log('Os dados nao carregaram')
-        setTabela([respostaTradata])
+        setTabela([...respostaTradata])
       }
 
     } catch (err) {

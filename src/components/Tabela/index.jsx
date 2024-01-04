@@ -15,7 +15,7 @@ export default function Tabela({contatos,setContato,setAoEditar, exibeFormulario
     const contatoLocalStorage = contatos.findIndex(contato => contato.id == id)
     //Verifica se ele consta no localStorage
     if (contatoLocalStorage == -1) {
-      const response = await fetch(`http://localhost:3000/banco/${id}`, {
+      const response = await fetch(`https://my.api.mockaroo.com/lestetelecom/test.json?key=f55c4060/${id}`, {
         method: 'DELETE',
 
       }).then(({ data }) => {
