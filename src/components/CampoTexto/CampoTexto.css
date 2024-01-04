@@ -17,3 +17,17 @@
     padding: 8px;
     border-radius: 4px;
 }
+
+@media screen and (max-width: 768px) {
+    .campoTexto{
+        margin: 8px;
+    }
+
+    .campoTexto label{
+        font-size: 12px;
+    }
+
+    .campoTexto input{
+        font-size: 12px;
+    }
+}

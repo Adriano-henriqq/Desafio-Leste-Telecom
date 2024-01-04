@@ -23,10 +23,19 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .modal {
       width: 90%; 
       max-height: 90%; 
+      transform: translateY(10%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .modal {
+      width: 90%; 
+      max-height: 90%; 
+      transform: translateY(-2%);
   }
 }
 
@@ -34,7 +43,8 @@
   .modal {
       width: 95%; 
       max-height: 95%; 
-      transform: translateY(0%);
+      transform: translateY(-2%);
+      
 
   }
 }
